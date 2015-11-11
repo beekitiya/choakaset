@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="หัวข้อ"
+            android:id="@+id/detail"
+            android:textSize="16dp"
+            android:layout_marginLeft="7dp"
+            android:textColor="#000000"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="สถานะ"
+            android:id="@+id/statusProb"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/topicType"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="วันที่"
+            android:id="@+id/dateProb"
+            android:layout_gravity="right"
+            android:textSize="14dp"
+            android:textColor="#000000"
+            android:layout_alignTop="@+id/statusProb"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="7dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="ประเภท"
+            android:id="@+id/topicType"
+            android:layout_below="@+id/detail"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:textSize="14dp"
+            android:textColor="#000000"/>
+
+    </RelativeLayout>
+</LinearLayout>

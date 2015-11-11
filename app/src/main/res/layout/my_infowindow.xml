@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="ไร่ดอยคำ"
+            android:gravity="center"
+            android:id="@+id/farmName"
+            android:background="#4eb7ad"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageAccount"
+            android:layout_below="@+id/farmName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_account"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="ความก้าวหน้าในการเก็บเกี่ยว"
+            android:id="@+id/txtStatus"
+            android:layout_alignTop="@+id/imageAccount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="ชื่อ-นามสกุล เจ้าของไร่"
+            android:id="@+id/txtName"
+            android:layout_alignLeft="@+id/imageAccount"
+            android:layout_alignStart="@+id/imageAccount"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            android:textColor="#13c9b6"
+            android:layout_marginLeft="25dp"
+            android:layout_below="@+id/txtStatus"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="นางสาวกิติยา สุริยฉาย"
+            android:id="@+id/ownName"
+            android:layout_below="@+id/txtName"
+            android:layout_alignLeft="@+id/txtName"
+            android:layout_alignStart="@+id/txtName"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="พืชที่ปลูก"
+            android:id="@+id/txtPlant"
+            android:layout_below="@+id/ownName"
+            android:layout_alignLeft="@+id/txtName"
+            android:layout_alignStart="@+id/txtName"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#15c9b7"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="ข้าวโพด"
+            android:id="@+id/plantName"
+            android:layout_below="@+id/txtPlant"
+            android:layout_alignLeft="@+id/ownName"
+            android:layout_alignStart="@+id/ownName"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="จำนวนพื้นที่เพาะปลูก"
+            android:id="@+id/txtArea"
+            android:layout_below="@+id/plantName"
+            android:layout_alignLeft="@+id/txtPlant"
+            android:layout_alignStart="@+id/txtPlant"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#1bcab9"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="5 ไร่ 3 งาน 45 ตารางวา"
+            android:id="@+id/areaQty"
+            android:layout_below="@+id/txtArea"
+            android:layout_alignLeft="@+id/plantName"
+            android:layout_alignStart="@+id/plantName"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="จำนวนผลผลิตต่อไรที่คาดว่าจะได้รับ"
+            android:id="@+id/txtProduct"
+            android:layout_below="@+id/areaQty"
+            android:layout_alignLeft="@+id/txtArea"
+            android:layout_alignStart="@+id/txtArea"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#1dcaba"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="400 กิโลกรัม"
+            android:id="@+id/productQty"
+            android:layout_below="@+id/txtProduct"
+            android:layout_alignLeft="@+id/areaQty"
+            android:layout_alignStart="@+id/areaQty"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"/>
+
+    </RelativeLayout>
+</LinearLayout>

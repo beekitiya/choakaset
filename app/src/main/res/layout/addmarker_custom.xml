@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:background="#ffffff"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp">
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/infname"
+            android:textSize="14dp"
+            android:layout_alignTop="@+id/inlname"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/inlname"
+            android:textSize="14dp"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/textView"
+            android:layout_toRightOf="@+id/infname"
+            android:layout_toEndOf="@+id/infname" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/inPlant"
+            android:hint="พืชที่ปลูก"
+            android:textSize="14dp"
+            android:layout_below="@+id/infname"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/inlname"
+            android:layout_toLeftOf="@+id/inlname" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/inBreed"
+            android:hint="พันธุ์พืช"
+            android:textSize="14dp"
+            android:layout_alignTop="@+id/inPlant"
+            android:layout_alignRight="@+id/inlname"
+            android:layout_alignEnd="@+id/inlname"
+            android:layout_toRightOf="@+id/infname"
+            android:layout_toEndOf="@+id/infname" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:ems="10"
+            android:id="@+id/inBeginDate"
+            android:hint="วันที่เริ่มเพาะปลูก"
+            android:textSize="14dp"
+            android:layout_below="@+id/field"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/inBreed"
+            android:layout_toStartOf="@+id/inBreed"
+            android:focusable="false" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:ems="10"
+            android:id="@+id/inEndDate"
+            android:layout_alignTop="@+id/inBeginDate"
+            android:layout_toRightOf="@+id/inBeginDate"
+            android:layout_alignRight="@+id/inBreed"
+            android:layout_alignEnd="@+id/inBreed"
+            android:hint="วันที่สิ้นสุด"
+            android:textSize="14dp"
+            android:focusable="false"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"
+            android:ems="10"
+            android:id="@+id/field"
+            android:textSize="14dp"
+            android:hint="จำนวนไร่"
+            android:layout_below="@+id/inPlant"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/checkIrrigated"
+            android:layout_alignEnd="@+id/checkIrrigated" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="เขตชลประทาน"
+            android:id="@+id/checkIrrigated"
+            android:textSize="14dp"
+            android:layout_marginTop="39dp"
+            android:layout_below="@+id/inProductQty"
+            android:layout_toLeftOf="@+id/ngarn"
+            android:layout_toStartOf="@+id/ngarn" />
+
+        <EditText
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/ngarn"
+            android:hint="งาน"
+            android:layout_alignBottom="@+id/field"
+            android:layout_centerHorizontal="true"
+            android:textSize="14dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/wah"
+            android:hint="ตารางวา"
+            android:textSize="14dp"
+            android:layout_alignTop="@+id/field"
+            android:layout_toRightOf="@+id/ngarn"
+            android:layout_alignRight="@+id/inEndDate"
+            android:layout_alignEnd="@+id/inEndDate" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ตกลง"
+            android:id="@+id/submitCrop"
+            android:layout_alignTop="@+id/cancelCrop"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ยกเลิก"
+            android:id="@+id/cancelCrop"
+            android:layout_below="@+id/checkIrrigated"
+            android:layout_toLeftOf="@+id/submitCrop"
+            android:layout_toStartOf="@+id/submitCrop" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center"
+            android:text="เพิ่มบัญชีการเพาะปลูก"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="#4eb7ad"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/inProductQty"
+            android:hint="จำนวนผลผลิต(กิโลกรัม)"
+            android:textSize="14dp"
+            android:layout_below="@+id/inBeginDate"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerSeed"
+            android:layout_below="@+id/inProductQty"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+</LinearLayout>

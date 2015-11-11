@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#ee1a1a">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/username"
+        android:hint="Username"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:hint="Password"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="เข้าสู่ระบบ"
+        android:id="@+id/login"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ยกเลิก"
+        android:id="@+id/cancel"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-50dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="สมัครสมาชิก"
+        android:id="@+id/regis"
+        android:layout_gravity="right"
+        android:textStyle="bold|italic"
+        android:background="#00ffffff"
+        android:textColor="#f1b351"
+        android:layout_marginTop="10dp"
+        android:focusableInTouchMode="false"
+        android:layout_marginRight="10dp" />
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="เพิ่มบัญชีการเพาะปลูก"
+        android:gravity="center"
+        android:id="@+id/farmName"
+        android:background="#4eb7ad"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="16dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:hint="วันที่"
+        android:ems="10"
+        android:id="@+id/timeAccount" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail"
+        android:hint="รายละเอียด"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/accountPrice"
+        android:hint="จำนวนเงิน(บาท)"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ยกเลิก"
+        android:id="@+id/cancelAccount"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ตกลง"
+        android:id="@+id/submitAccount"
+        android:layout_gravity="right"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="-48dp" />
+
+
+</LinearLayout>
